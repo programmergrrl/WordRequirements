@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="WordRequirements"
+    targetNamespace="http://ProgrammerGrrl.com/WordRequirements.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://ProgrammerGrrl.com/WordRequirements.xsd"
+    xmlns:mstns="http://ProgrammerGrrl.com/WordRequirements.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+<xs:element name="Requirement">
+  <xs:complexType>
+    <xs:attribute name="Status">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="Not Started" />
+          <xs:enumeration value="In Progress" />
+          <xs:enumeration value="Complete" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+</xs:element>
+</xs:schema>
